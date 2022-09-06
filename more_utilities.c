@@ -7,6 +7,7 @@
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
+
 int _putchar(char c)
 {
 	return (write(1, &c, 1));
@@ -19,6 +20,7 @@ int _putchar(char c)
   *
   * Return: Nothing to returns
   */
+
 void _puts(char *str)
 {
 	while (*str)
@@ -38,6 +40,7 @@ void _puts(char *str)
   *
   * Return: int value
   */
+
 int _strncmp(const char *s1, const char *s2, size_t len)
 {
 	unsigned int pos = 0;
@@ -70,6 +73,7 @@ int _strncmp(const char *s1, const char *s2, size_t len)
   *
   * Return: A new pointer to the memory block allocated with the new size
   */
+
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	char *nptr;
