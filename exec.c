@@ -7,6 +7,7 @@
   *
   * Return: The path name concatenated with the program name
   */
+
 char *concat_path(char *pathname, char *progname)
 {
 	int prog_len = 0, path_len = 0, new_sz = 0;
@@ -30,6 +31,7 @@ char *concat_path(char *pathname, char *progname)
   *
   * Return: The path name of the command found or NULL if failed
   */
+
 char *find(char *cname)
 {
 	char *env_path = NULL, **p_tokns = NULL;
@@ -79,6 +81,7 @@ char *find(char *cname)
   *
   * Return: A integer status value
   */
+
 int exec(char *cname, char **opts)
 {
 	pid_t child;
