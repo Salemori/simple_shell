@@ -6,6 +6,7 @@
   *
   * Return: The number of words found in the string
   */
+
 int count_input(char *str)
 {
 	int i = 0, cw = 0, state = 0;
@@ -33,6 +34,7 @@ int count_input(char *str)
   *
   * Return: The number of delimiters in the string
   */
+
 int count_delims(char *str, char *del)
 {
 	int i = 0, j = 0, cw = 0;
