@@ -5,6 +5,7 @@
   *
   * Return: Always zero.
   */
+
 int main(void)
 {
 	char *line = NULL, **u_tokns = NULL;
