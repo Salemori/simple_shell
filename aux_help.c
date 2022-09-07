@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * aux_help_env - Help information for the builtin env
  * Return: no return
@@ -11,6 +12,7 @@ void aux_help_env(void)
 	help = "Print the enviroment of the shell.\n";
 	write(STDOUT_FILENO, help, _strlen(help));
 }
+
 /**
  * aux_help_setenv - Help information for the builtin setenv
  * Return: no return
@@ -26,6 +28,7 @@ void aux_help_setenv(void)
 	help = "Add a new definition to the environment\n";
 	write(STDOUT_FILENO, help, _strlen(help));
 }
+
 /**
  * aux_help_unsetenv - Help information for the builtin unsetenv
  * Return: no return
@@ -38,6 +41,7 @@ void aux_help_unsetenv(void)
 	help = "Remove an entry completely from the environment\n";
 	write(STDOUT_FILENO, help, _strlen(help));
 }
+
 /**
  * aux_help_general - Entry point for help information for the help builtin
  * Return: no return
@@ -60,6 +64,7 @@ void aux_help_general(void)
 	help = "unsetenv [variable]\n";
 	write(STDOUT_FILENO, help, _strlen(help));
 }
+
 /**
  * aux_help_exit - Help information fot the builint exit
  * Return: no return

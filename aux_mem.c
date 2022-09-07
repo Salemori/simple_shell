@@ -7,6 +7,7 @@
  *
  * Return: no return.
  */
+
 void _memcpy(void *newptr, const void *ptr, unsigned int size)
 {
 	char *char_ptr = (char *)ptr;
@@ -16,6 +17,7 @@ void _memcpy(void *newptr, const void *ptr, unsigned int size)
 	for (i = 0; i < size; i++)
 		char_newptr[i] = char_ptr[i];
 }
+
 /**
  * _realloc - reallocates a memory block.
  * @ptr: pointer to the memory previously allocated.
@@ -26,6 +28,7 @@ void _memcpy(void *newptr, const void *ptr, unsigned int size)
  * if new_size == old_size, returns ptr without changes.
  * if malloc fails, returns NULL.
  */
+
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	void *newptr;
@@ -49,6 +52,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	free(ptr);
 	return (newptr);
 }
+
 /**
  * _reallocdp - reallocates a memory block of a double pointer.
  * @ptr: double pointer to the memory previously allocated.
@@ -59,6 +63,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
  * if new_size == old_size, returns ptr without changes.
  * if malloc fails, returns NULL.
  */
+
 char **_reallocdp(char **ptr, unsigned int old_size, unsigned int new_size)
 {
 	char **newptr;
