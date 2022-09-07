@@ -41,6 +41,7 @@ char *swap_char(char *input, int bool)
 	}
 	return (input);
 }
+
 /**
  * add_nodes - add separators and command lines in the lists
  *
@@ -72,6 +73,7 @@ void add_nodes(sep_list **head_s, line_list **head_l, char *input)
 		line = _strtok(NULL, ";|&");
 	} while (line != NULL);
 }
+
 /**
  * go_next - go to the next command line stored
  *
@@ -111,6 +113,7 @@ void go_next(sep_list **list_s, line_list **list_l, data_shell *datash)
 	*list_s = ls_s;
 	*list_l = ls_l;
 }
+
 /**
  * split_commands - splits command lines according to
  * the separators ;, | and &, and executes them
@@ -148,6 +151,7 @@ int split_commands(data_shell *datash, char *input)
 		return (0);
 	return (1);
 }
+
 /**
  * split_line - tokenizes the input string
  *

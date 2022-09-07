@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * check_env - checks if the typed variable is an env variable
  *
@@ -38,6 +39,7 @@ void check_env(r_var **h, char *in, data_shell *data)
 	}
 	add_rvar_node(h, j, NULL, 0);
 }
+
 /**
  * check_vars - check if the typed variable is $$ or $?
  *
@@ -77,6 +79,7 @@ int check_vars(r_var **h, char *in, char *st, data_shell *data)
 	}
 	return (i);
 }
+
 /**
  * replaced_input - replaces string into variables
  *
@@ -127,6 +130,7 @@ char *replaced_input(r_var **head, char *input, char *new_input, int nlen)
 		}
 		return (new_input);
 }
+
 /**
  * rep_var - calls functions to replace string into vars
  *
