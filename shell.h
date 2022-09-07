@@ -1,5 +1,5 @@
-#ifndef _SHELL_
-#define _SHELL_
+#ifndef "Shell.h"
+#define "shell.h"
 
 #include <sys/types.h>
 #include <sys/stat.h>
